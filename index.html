@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VPSNTT.A6 - Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="updateBalanceDisplay()">
+  <header>
+    <h1>VPSNTT.A6</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="nap-tien.html">Nạp tiền</a>
+      <a href="tai-khoan.html">Tài khoản</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Gói VPS Hiện Có</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mini</h3>
+        <p>CPU 1 Core, RAM 1GB</p>
+        <p>Giá: 49.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS Mini', 49000)">Mua ngay</button>
+      </div>
+      <div class="card">
+        <h3>Starter</h3>
+        <p>CPU 2 Core, RAM 2GB</p>
+        <p>Giá: 99.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS Starter', 99000)">Mua ngay</button>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>CPU 4 Core, RAM 4GB</p>
+        <p>Giá: 199.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS Pro', 199000)">Mua ngay</button>
+      </div>
+      <div class="card">
+        <h3>Business</h3>
+        <p>CPU 6 Core, RAM 8GB</p>
+        <p>Giá: 399.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS Business', 399000)">Mua ngay</button>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p>CPU 8 Core, RAM 16GB</p>
+        <p>Giá: 699.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS Enterprise', 699000)">Mua ngay</button>
+      </div>
+      <div class="card">
+        <h3>VIP</h3>
+        <p>CPU 12 Core, RAM 32GB</p>
+        <p>Giá: 1.299.000đ / tháng</p>
+        <button class="btn" onclick="buyVPS('VPS VIP', 1299000)">Mua ngay</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 VPSNTT.A6 — Website bán VPS demo | Số dư: <span id="balance">0đ</span></p>
+  </footer>
+</body>
+</html>
