@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trang HTML Đơn Giản</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#fff;--accent:#2b6cb0;--text:#0f1724}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .container{max-width:900px;margin:40px auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+    h1{margin:0;font-size:1.6rem}
+    nav a{margin-left:12px;text-decoration:none;color:var(--accent)}
+    .hero{background:linear-gradient(180deg,rgba(43,108,176,0.08),transparent);padding:18px;border-radius:10px;margin-bottom:18px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:var(--card);padding:14px;border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,0.06)}
+    footer{margin-top:20px;text-align:center;color:#6b7280;font-size:0.9rem}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+    @media (max-width:480px){.container{margin:18px;padding:12px}h1{font-size:1.25rem}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Website Mẫu</h1>
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Tính năng</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Chào mừng!</h2>
+      <p>Đây là một trang HTML đơn giản — dễ sửa, dễ mở và phù hợp để bắt đầu một dự án nhỏ.</p>
+      <p><a class="btn" href="#features">Xem tính năng</a></p>
+    </section>
+
+    <main id="features">
+      <div class="cards">
+        <div class="card">
+          <h3>Tùy chỉnh dễ dàng</h3>
+          <p>Chỉnh style trong thẻ &lt;style&gt; hoặc tách ra file CSS riêng.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Bố cục đơn giản và thích ứng với thiết bị di động.</p>
+        </div>
+        <div class="card">
+          <h3>Thêm JavaScript</h3>
+          <p>Bạn có thể thêm tương tác nhẹ bằng JavaScript ở cuối trang.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© "Tên bạn" — 2025 · <a href="mailto:you@example.com">you@example.com</a></p>
+    </footer>
+  </div>
+
+  <!-- Thêm script JS nhỏ nếu cần -->
+  <script>
+    // Ví dụ: scroll mượt khi click link
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href');
+        if(id === '#') return;
+        const el = document.querySelector(id);
+        if(el) el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
