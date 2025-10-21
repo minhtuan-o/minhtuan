@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tài khoản - VPSNTT.A6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="updateBalanceDisplay(); renderOrders();">
+  <header>
+    <h1>VPSNTT.A6</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="nap-tien.html">Nạp tiền</a>
+      <a href="tai-khoan.html">Tài khoản</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Đơn hàng / VPS đã mua</h2>
+    <p>Số dư: <strong id="balance">0đ</strong></p>
+    <div id="ordersList"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 VPSNTT.A6</p>
+  </footer>
+</body>
+</html>
