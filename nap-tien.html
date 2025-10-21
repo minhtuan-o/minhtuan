@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nạp tiền - VPSNTT.A6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="updateBalanceDisplay()">
+  <header>
+    <h1>VPSNTT.A6</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="nap-tien.html">Nạp tiền</a>
+      <a href="tai-khoan.html">Tài khoản</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Nạp tiền vào tài khoản</h2>
+    <p>Số dư hiện tại: <strong id="balance">0đ</strong></p>
+    <label for="napAmount">Nhập số tiền cần nạp:</label>
+    <input type="number" id="napAmount" placeholder="VD: 100000">
+    <button class="btn" onclick="handleNapTien()">Xác nhận nạp</button>
+  </div>
+
+  <footer>
+    <p>© 2025 VPSNTT.A6</p>
+  </footer>
+</body>
+</html>
